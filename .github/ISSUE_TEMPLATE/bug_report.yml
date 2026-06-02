@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a Wikirepo UI, route, or documentation issue.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What broke?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact route and interaction.
+      placeholder: |
+        1. Open /viewer/...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Local checks
+      description: Paste relevant `pnpm verify` output.

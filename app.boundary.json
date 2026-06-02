@@ -1,0 +1,23 @@
+{
+  "appId": "wikirepo",
+  "packageName": "@the-abyss/wikirepo",
+  "domain": "internal",
+  "productClassification": "internal-operator-app",
+  "futureStandaloneRepo": "Yes / drclassy/sentra-wikirepo",
+  "crownJewelAccessTier": "CJ-0 none",
+  "crownJewelAccessMode": "none",
+  "ownsCrownJewelLogic": false,
+  "allowedImports": [
+    "app-local imports",
+    "public package entrypoints",
+    "shared primitives when explicitly declared"
+  ],
+  "forbiddenImports": [
+    "sibling apps",
+    "packages/sentra/**/src/**",
+    "crown-jewel internal paths",
+    "copied diagnosis/RAG/OCR/document-intelligence algorithms",
+    "direct crown-jewel database writes"
+  ],
+  "verificationCommand": "pnpm verify"
+}

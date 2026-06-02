@@ -1,0 +1,30 @@
+name: Feature request
+description: Propose a new Wikirepo capability or documentation route.
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user need does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the route, UI, or documentation change.
+    validations:
+      required: true
+  - type: dropdown
+    id: boundary
+    attributes:
+      label: Boundary impact
+      options:
+        - CJ-0 documentation only
+        - Needs owner review
+        - Unsure
+    validations:
+      required: true
